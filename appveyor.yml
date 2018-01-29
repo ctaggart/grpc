@@ -7,5 +7,5 @@ install:
   - choco install yasm
   - choco install ninja
 build_script:
-  - python tools/run_tests/run_tests.py -l csharp --build_only
+  - python tools/run_tests/run_tests.py -c dbg -l csharp --build_only
 test: off
