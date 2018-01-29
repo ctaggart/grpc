@@ -1,4 +1,6 @@
 image: Visual Studio 2017
 test: off
+install:
+  - pip install six
 build_script:
   - python tools/run_tests/run_tests.py -l csharp --build_only
