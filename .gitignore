@@ -107,6 +107,12 @@ Podfile.lock
 # IDE specific folder for JetBrains IDEs
 .idea/
 
+# Visual Studio 2017
+.vs/
+
+# VS Code
+.vscode/
+
 # Blaze files
 bazel-bin
 bazel-genfiles

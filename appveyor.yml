@@ -1,0 +1,4 @@
+image: Visual Studio 2017
+test: off
+build_script:
+  - python tools/run_tests/run_tests.py -l csharp --build_only
