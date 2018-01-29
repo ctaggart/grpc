@@ -1,0 +1,11 @@
+image: Visual Studio 2017
+test: off
+install:
+  - git submodule update --init
+  - pip install six
+  - pip install httplib2
+  - pip install google-api-python-client
+  - choco install yasm
+  - choco install ninja
+build_script:
+  - python tools/run_tests/run_tests.py -l csharp --build_only
