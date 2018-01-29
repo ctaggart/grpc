@@ -1,8 +1,7 @@
 image: Visual Studio 2017
 test: off
-init:
-  - git submodule update --init
 install:
+  - git submodule update --init
   - pip install six
   - pip install httplib2
 build_script:
