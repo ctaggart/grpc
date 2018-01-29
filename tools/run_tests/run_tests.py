@@ -105,7 +105,7 @@ def platform_string():
     return jobset.platform_string()
 
 
-_DEFAULT_TIMEOUT_SECONDS = 5 * 60
+_DEFAULT_TIMEOUT_SECONDS = 10 * 60
 
 
 def run_shell_command(cmd, env=None, cwd=None):
