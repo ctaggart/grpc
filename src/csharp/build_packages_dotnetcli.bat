@@ -14,6 +14,7 @@
 
 @rem Current package versions
 set VERSION=1.9.0-pre3
+if defined APPVEYOR ( set VERSION=%APPVEYOR_BUILD_VERSION% )
 
 @rem Adjust the location of nuget.exe
 set NUGET=nuget

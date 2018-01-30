@@ -1,5 +1,8 @@
 image: Visual Studio 2017
 
+init:
+  - ps: Update-AppveyorBuild -Version '1.9.0-pre3pdb' + [int]::Parse($env:appveyor_build_number).ToString('000')
+
 install:
   - git submodule update --init
   - pip install six
