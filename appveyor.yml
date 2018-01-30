@@ -14,7 +14,7 @@ build_script:
       cd $env:appveyor_build_folder\src\csharp
 
       # use existing native libraries
-      nuget install Grpc.Core --version 1.9.0-pre2
+      nuget install Grpc.Core -version 1.9.0-pre2
       $dir = "$pwd\Grpc.Core.1.9.0-pre2"
       md nativelibs
       md nativelibs\csharp_ext_macos_x64
