@@ -169,7 +169,7 @@ class JobSpec(object):
                  environ=None,
                  cwd=None,
                  shell=False,
-                 timeout_seconds=5 * 60,
+                 timeout_seconds=10 * 60,
                  flake_retries=0,
                  timeout_retries=0,
                  kill_handler=None,

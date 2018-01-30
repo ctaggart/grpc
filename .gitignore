@@ -104,8 +104,10 @@ Pods/
 # Git generated files for conflicting
 *.orig
 
-# IDE specific folder for JetBrains IDEs
+# IDE specific folders
 .idea/
+.vs/
+.vscode/
 
 # Blaze files
 bazel-bin
@@ -132,3 +134,4 @@ bm_*.json
 
 # cmake build files
 /cmake/build
+/src/csharp/nativelibs/

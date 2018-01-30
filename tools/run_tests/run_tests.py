@@ -105,7 +105,7 @@ def platform_string():
     return jobset.platform_string()
 
 
-_DEFAULT_TIMEOUT_SECONDS = 5 * 60
+_DEFAULT_TIMEOUT_SECONDS = 10 * 60
 
 
 def run_shell_command(cmd, env=None, cwd=None):
@@ -702,7 +702,7 @@ class PythonLanguage(object):
         return [
             self.config.job_spec(
                 config.run,
-                timeout_seconds=5 * 60,
+                timeout_seconds=_DEFAULT_TIMEOUT_SECONDS,
                 environ=dict(
                     list(environment.items()) + [(
                         'GRPC_PYTHON_TESTRUNNER_FILTER', str(suite_name))]),
