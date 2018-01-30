@@ -16,7 +16,7 @@ build_script:
       # use existing native libraries
       nuget install Grpc.Core -version 1.9.0-pre2
       $dir = "$pwd\Grpc.Core.1.9.0-pre2"
-      md nativelibs
+      # md nativelibs
       md nativelibs\csharp_ext_macos_x64
       cp $dir/runtimes/osx/native/libgrpc_csharp_ext.x64.dylib nativelibs\csharp_ext_macos_x64\libgrpc_csharp_ext.dylib
       md nativelibs\csharp_ext_macos_x86
@@ -30,7 +30,7 @@ build_script:
       md nativelibs\csharp_ext_windows_x86
       cp $dir/runtimes/win/native/grpc_csharp_ext.x86.dll nativelibs\csharp_ext_windows_x86\grpc_csharp_ext.dll
 
-      .\build_packages_dotnetcli.bat
+  - build_packages_dotnetcli.bat
 
 test: off
 
